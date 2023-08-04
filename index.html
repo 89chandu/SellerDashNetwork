@@ -12,9 +12,19 @@
       <input type="number" placeholder="Price" id="productPrice" required>
       <input type="text" placeholder="Color" id="productColor" required>
       <input type="text" placeholder="Size" id="productSize" required>
+      <input type="number" placeholder="Quantity" id="productQuantity" required>
+      <label for="productCategory">Category:</label>
+      <select id="productCategory" required>
+        <option value="topwear">Topwear</option>
+        <option value="footwear">Footwear</option>
+        <option value="bottomwear">Bottomwear</option>
+        <option value="meanwear">Meanwear</option>
+        <option value="women">Women</option>
+      </select>
       <button type="submit">Add Product</button>
     </form>
     <div id="productList"></div>
+    <div id="totalValue"></div>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
